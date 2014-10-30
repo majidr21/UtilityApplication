@@ -28,7 +28,11 @@ public class MainActivity extends ActionBarActivity
 				
 				double num = Double.parseDouble(number.getText().toString());
 				
-				num = num * 5;
+				//num = Double.parseDouble(samplecalc.multNum(num));
+				
+				samplecalc x = new samplecalc(num);
+				num = x.multNum2();
+			
 				
 				display.setText(num + "");
 				
